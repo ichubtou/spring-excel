@@ -102,6 +102,7 @@ public class ExcelService {
 
             for (int i = 0; i < headers.length; i++) {
                 sheet.autoSizeColumn(i);
+                sheet.setColumnWidth(i, (sheet.getColumnWidth(i) + 1024));
             }
 
             // 엑셀 파일 쓰기
